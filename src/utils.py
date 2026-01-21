@@ -2,6 +2,7 @@
 Utility functions for the calculator application.
 These helper functions can be modified independently to demonstrate merge scenarios.
 """
+import hashlib
 
 
 def display_banner():
@@ -49,11 +50,20 @@ def format_result(result, decimals=2):
     return f"{result:.{decimals}f}"
 
 
-def greet_user(name="User"):
+def greet_user(name: str = "User"):
     """Returns a personalized greeting message."""
     return f"Hello, {name}! Hope you are having a productive day."
 
 
-def calculate_tax(tax, tax_rate=0.016):
+def calculate_tax(tax: int, tax_rate=0.016):
     """Calculate tax based on the given tax rate."""
     return tax * tax_rate
+
+
+def generate_product_code(product_id: int, prefix="PROD"):
+    """Generate a product code with a given prefix."""
+    bytes_to_hash = str(product_id).encode('utf-8')
+    hasher = hashlib.sha256()
+    hasher.update(bytes_to_hash)
+    hex_hash = hasher.hexdigest()
+    return f"{prefix}-{hex_hash[:8]}"
