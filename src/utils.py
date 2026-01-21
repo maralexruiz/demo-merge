@@ -18,13 +18,13 @@ def display_banner():
 def get_user_input(prompt):
     """
     Get numeric input from the user.
-    
+
     Args:
         prompt: The prompt to display to the user
-    
+
     Returns:
         float: The numeric value entered by the user
-    
+
     Raises:
         ValueError: If the input is not a valid number
     """
@@ -38,11 +38,11 @@ def get_user_input(prompt):
 def format_result(result, decimals=2):
     """
     Format a numeric result for display.
-    
+
     Args:
         result: The numeric result to format
         decimals: Number of decimal places (default: 2)
-    
+
     Returns:
         str: Formatted result string
     """
