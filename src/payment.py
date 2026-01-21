@@ -24,3 +24,12 @@ class Payment:
         if isinstance(o, Payment):
             return self.id == o.id
         return False
+
+    class Meta:
+        """Meta class for Payment."""
+
+        table_name: str = "payments"
+        metadata: dict = {
+            "description": "Table to store payment records for invoices.",
+            "version": 1.0,
+        }

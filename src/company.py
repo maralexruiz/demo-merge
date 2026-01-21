@@ -30,3 +30,7 @@ class Company:
 
     def __repr__(self) -> str:
         return f"<Company(id={self.id}, name='{self.name}', active={self.is_active})>"
+
+    @property
+    def info(self):
+        return f"{self.name} - Address: {self.address or 'N/A'}"
