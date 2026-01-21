@@ -3,7 +3,8 @@ Utility functions for the calculator application.
 These helper functions can be modified independently to demonstrate merge scenarios.
 """
 import hashlib
-
+from datetime import datetime
+from .user import User
 
 def display_banner():
     """Display the application banner."""
@@ -67,3 +68,14 @@ def generate_product_code(product_id: int, prefix="PROD"):
     hasher.update(bytes_to_hash)
     hex_hash = hasher.hexdigest()
     return f"{prefix}-{hex_hash[:8]}"
+
+
+def get_user_from_payment(payment):
+    """Extract user ID from a Payment object."""
+    return User(
+        id=payment.user_id,
+        name="Jon Doe",
+        email="ondoe@example.com",
+        created_at=datetime.now(),
+        updated_at=datetime.now()
+    )
