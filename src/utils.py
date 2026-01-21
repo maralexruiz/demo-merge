@@ -47,3 +47,8 @@ def format_result(result, decimals=2):
         str: Formatted result string
     """
     return f"{result:.{decimals}f}"
+
+
+def greet_user(name="User"):
+    """Returns a personalized greeting message."""
+    return f"Hello, {name}! Hope you are having a productive day."
