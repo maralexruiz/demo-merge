@@ -52,3 +52,8 @@ def format_result(result, decimals=2):
 def greet_user(name="User"):
     """Returns a personalized greeting message."""
     return f"Hello, {name}! Hope you are having a productive day."
+
+
+def calculate_tax(tax, tax_rate=0.016):
+    """Calculate tax based on the given tax rate."""
+    return tax * tax_rate
