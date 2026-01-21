@@ -1,0 +1,17 @@
+{
+  "application": {
+    "name": "Demo Merge Calculator",
+    "version": "1.0.0",
+    "description": "A simple calculator app for testing Git merge strategies"
+  },
+  "settings": {
+    "decimal_places": 2,
+    "color_output": true,
+    "verbose_logging": false
+  },
+  "features": {
+    "basic_operations": true,
+    "advanced_operations": false,
+    "history": false
+  }
+}
