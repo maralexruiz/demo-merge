@@ -6,6 +6,7 @@ import hashlib
 from datetime import datetime
 from .user import User
 
+
 def display_banner():
     """Display the application banner."""
     banner = """
@@ -79,3 +80,7 @@ def get_user_from_payment(payment):
         created_at=datetime.now(),
         updated_at=datetime.now()
     )
+
+
+def lorem_ipsum():
+    return "Lorem ipsum dolor sit amet, consectetur adipiscing elit."

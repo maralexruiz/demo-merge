@@ -30,3 +30,6 @@ class Invoice:
 
     def __repr__(self) -> str:
         return f"<Invoice(id={self.id}, amount={self.amount}, status='{self.status}')>"
+
+    def invoice_method(arg):
+        return f"Invoice method called with argument: {arg}"
