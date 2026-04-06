@@ -3,10 +3,16 @@
 A simple Python calculator application designed to help you practice and understand different Git merge strategies and workflows.
 > [!NOTE]
 > This repo need a oral explination
+
+
 > [!TIP]
 > This repo need a oral explination
+
+
 > [!IMPORTANT]
 > This repo need a oral explination
+
+
 > [!WARNING]
 > This repo need a oral explination
 
