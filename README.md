@@ -1,6 +1,9 @@
 # Demo Merge - Git Merge Strategy Testing Project
 
 A simple Python calculator application designed to help you practice and understand different Git merge strategies and workflows.
+> .[!NOTE]
+> THis repo need a oral explination
+
 
 ## Purpose
 
